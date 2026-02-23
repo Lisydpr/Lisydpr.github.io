@@ -1,0 +1,61 @@
+/* --- STYLE GLOBAL --- */
+body {
+    background-color: #FFD6EF;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* --- MENU --- */
+nav {
+    background-color: white;
+    padding: 15px;
+    border-bottom: 2px solid #F0A1C4;
+    position: top;
+}
+
+nav a {
+    color: #F0A1C4;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a:visited {
+    color: #F0A1C4;
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+/* --- GALERIE IMAGES --- */
+.galerie img {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* --- VIDEOS --- */
+.video-container iframe {
+    width: 300px;
+    height: 200px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+/* --- BOUTONS MUSIQUE --- */
+.btn {
+    background-color: #F0A1C4;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
