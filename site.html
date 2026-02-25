@@ -2,28 +2,280 @@
 <html lang="fr">
 
 <head>
-	<title>Mon site de rêve </title>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Mon site de rêve</title>
+    <meta charset="utf-8" />
+    style.css
+
+    <style>
+        body { background:#111; font-family: Arial; }
+
+        #entete-de-page p, #contenu h1, section h2 { color:#ff4d00; }
+
+        /* GRAND BLOC */
+        .menu-container {
+            width: 90%;
+            margin: 25px auto;
+            background: rgba(20,20,20,0.92);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #ff4d00;
+            box-shadow: 0 0 12px #ff4d00;
+        }
+
+        .tabs { display:flex; gap:10px; margin-bottom:15px; flex-wrap:wrap; }
+
+        .tab-btn {
+            padding:10px 16px;
+            background:#333;
+            border:none;
+            border-radius:6px;
+            cursor:pointer;
+            color:white;                  /* TEXTE BLANC */
+            font-weight:600;
+        }
+        .tab-btn:hover { background:#ff3300; }
+
+        .tab-btn.active {
+            background:#ff4d00;
+            color:white;                 /* TEXTE BLANC */
+        }
+
+        .tab-content { display:none; }
+        .tab-content.active { display:block; }
+    </style>
 </head>
 
 <body>
-	<div id="entete-de-page"> 
-		<p>Mon site de rêve</p>
-	</div> 
-	<table id="bloc-menu" border="1">
-	<tr>
-		<th><a href="index.html"> Accueil </a></th>
-		<th><a href="productions.html">Productions scolaires</a></th>
-		<th><a href="passions.html">Mes Passions</a></th>
-		<th><a href="videos.html">Mes Vidéos</a></th>
-		<th><a href="site.html">Mon site de rêve</a></th>
-	</tr>
-	</table> <br/> 
-	<div id="contenu">
-		<h1>Mon site de rêve </h1>	
-	</div> <br/> 
-	
-</body>
 
+    <div id="entete-de-page">
+        <p>Mon site de rêve</p>
+    </div>
+
+    <!-- MENU DU HAUT -->
+<table id="bloc-menu" border="1"> <tr> 
+<th><a href="index.html"> Accueil </a></th> 
+<th><a href="productions.html">Productions scolaires</a></th> 
+<th><a href="passions.html">Mes Passions</a></th> 
+<th><a href="videos.html">Mes Vidéos</a></th> 
+<th><a href="site.html">Mon site de rêve</a></th> </tr> </table> <br/>
+
+    <div id="contenu">
+        <h1>Cinéma & Lisy</h1>
+    </div>
+
+
+    <!--  BLOC 1 -------------------- NOMINATIONS ---------------------------- -->
+  
+    <section>
+        <h2>🏆 Nominations aux César 2026</h2>
+
+        <div class="menu-container">
+
+            <h3>Liste des catégories</h3>
+
+            <div class="tabs c-tabs">
+                <button class="tab-btn active" data-tab="film">Meilleur Film</button>
+                <button class="tab-btn" data-tab="real">Meilleure Réalisation</button>
+                <button class="tab-btn" data-tab="actrice">Meilleure Acteur</button>
+                <button class="tab-btn" data-tab="acteur">Meilleur Actrice</button>
+                <button class="tab-btn" data-tab="roles">Second Rôle</button>
+                <button class="tab-btn" data-tab="espoir">Espoirs</button>
+                <button class="tab-btn" data-tab="scenario">Scénario original</button>
+                <button class="tab-btn" data-tab="technique">César d’honneur</button>
+            </div>
+
+            <!-- Onglet 1 : Film -->
+            <div class="tab-content active" id="film">
+                <h3>Meilleur Film</h3>
+                <ul>
+                    <li>Nouvelle Vague</li>
+                    <li>L’Attachement</li>
+                    <li>Dossier 137</li>
+                </ul>
+            </div>
+
+            <!-- Onglet 2 -->
+            <div class="tab-content" id="real">
+                <h3>Meilleure Réalisation</h3>
+                <p>
+				<li>Carine Tardieu pour L’Attachement</li>
+
+                   <li>Dominik Moll pour Dossier 137</li>
+
+                <li>Stéphane Demoustier pour L’Inconnu de la Grande Arche</li>
+
+                 <li> Linklater pour Nouvelle Vague</li>
+
+                <li> Hafsia Herzi pour La Petite Dernière</li>
+				</p>
+            </div>
+
+            <!-- Onglet 3 -->
+            <div class="tab-content" id="actrice">
+                <h3>Meilleure Acteur</h3>
+                <p>
+				<li>Claes Bang dans L’Inconnu de la Grande Arche</li>
+
+<li>Bastien Bouillon dans Partir un jour</li>
+
+<li>Laurent Lafitte dans La Femme la plus riche du monde</li>
+
+<li>Pio Marmaï dans L’Attachement</li>
+
+<li>Benjamin Voisin dans L’Étranger</li>
+</p>
+            </div>
+
+            <!-- Onglet 4 -->
+            <div class="tab-content" id="acteur">
+                <h3>Meilleur Actrice</h3>
+                <p>
+				<li>Leïla Bekhti dans Ma mère, Dieu et Sylvie Vartan</li>
+
+
+<li>Valéria Bruni Tedeschi dans L’Attachement</li>
+
+
+<li>Léa Drucker dans Dossier 137</li>
+
+
+<li>Isabelle Huppert dans La Femme la plus riche du monde</li>
+
+
+<li>Mélanie Thierry dans La Chambre de Mariana</li>
+</p>
+            </div>
+
+            <!-- Onglet 5 -->
+            <div class="tab-content" id="roles">
+                <h3>Second Rôle</h3>
+                <p>
+<h2>Masculin </h2>
+				<li>Arlaud dans L’Inconnu de la Grande Arche</li>
+
+<li>Xavier Dolan dans L’Inconnu de la Grande Arche</li>
+
+<li>Michel Fau dans L’Inconnu de la Grande Arche</li>
+
+<li>Pierre Lottin dans L’Étranger</li>
+
+<li>Raphaël Personnaz dans La femme la plus riche du monde</li>
+<h2>Féminin </h2>
+<li>Jeanne Balibar dans Nino</li>
+
+<li>Dominique Blanc dans Partir un Jour</li>
+
+<li>Marina Foïs dans La femme la plus riche du monde</li>
+
+<li>Ji-Min Park dans La Petite Dernière</li>
+
+<li>Vimala Pons dans L’Attachement</li>
+
+</p>
+            </div>
+
+            <!-- Onglet 6 -->
+            <div class="tab-content" id="espoir">
+                <h3>Espoirs</h3>
+                <p><h2>Masculin </h2>
+				
+				<li>Idir Azougli dans Météors</li>
+
+
+<li>Sayyid El Alami dans La Pampa</li>
+
+
+<li>Félix Lefebvre dans L’Epreuve du Feu</li>
+
+
+<li>Guillaume Marbeck dans Nouvelle Vague</li>
+
+
+<li>Théodore Pellerin dans Nino</li>
+<h2>Féminin </h2>
+<li>Manon Clavel dans Kika</li>
+
+<li>Suzanne Lindon dans La Venue de l’avenir</li>
+
+<li>Nadia Melliti dans La Petite dernière</li>
+
+<li>Camille Rutherford dans Jane Austen a gâché ma vie</li>
+
+<li>Anja Verderosa dans L’épreuve du feu</li>
+</p>
+            </div>
+
+            <!-- Onglet 7 -->
+            <div class="tab-content" id="scenario">
+                <h3>Scénario original</h3>
+                <p><li>Dominik Moll et Gilles Marchand pour Dossier 137</li>
+
+<li>Pauline Loquès pour Nino</li>
+
+<li>Holly Gent et Vince Palmo pour Nouvelle Vague</li>
+
+<li>Franck Dubosc et Sarah Kaminsky pour Un ours dans le Jura</li>
+
+<li>Jafar Panahi pour Un simple accident</li>
+</p>
+            </div>
+
+            <!-- Onglet 8 -->
+            <div class="tab-content" id="technique">
+                <h3>César d’honneur</h3>
+                <p>Jim carrey</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------- -->
+    <!--  BLOC 2 -------------------- TOP 3 LISY ----------------------------- -->
+    <!-- -------------------------------------------------------------------- -->
+
+    <section>
+        <h2>⭐ Top 3 Films de Lisy</h2>
+
+        <div class="menu-container">
+            <ol>
+              <li> <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=221617.html" target="_blank">L'amour ouf</a> </li>
+              <li> <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=306254.html" target="_blank">Pas de vague</a> </li>
+			 <li> <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=180314.html" target="_blank">Time out</a> </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------- -->
+    <!--  BLOC 3 -------------------- ACTUELLEMENT AU CINÉMA ----------------- -->
+    <!-- -------------------------------------------------------------------- -->
+
+    <section>
+        <h2>🎬 Actuellement au cinéma</h2>
+
+        <div class="menu-container">
+            <ul>
+                <li> <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=1000024120.html" target="_blank">Lol 2.0</a> </li>
+				  <li> <a href="https://www.allocine.fr/article/fichearticle_gen_carticle=1000183369.html" target="_blank">Personne n’y croyait, alors ils l’ont fait !</a> </li>
+                <li> <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=318865.html" target="_blank">Scream 7</a> </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SCRIPTS ONGLET -->
+    <script>
+        const tabs = document.querySelectorAll(".c-tabs .tab-btn");
+        const contents = document.querySelectorAll(".menu-container .tab-content");
+
+        tabs.forEach(tab => {
+            tab.addEventListener("click", () => {
+                tabs.forEach(t => t.classList.remove("active"));
+                contents.forEach(c => c.classList.remove("active"));
+
+                tab.classList.add("active");
+                document.getElementById(tab.dataset.tab).classList.add("active");
+            });
+        });
+    </script>
+
+</body>
 </html>
